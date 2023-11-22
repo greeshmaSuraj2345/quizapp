@@ -8,6 +8,5 @@ import java.util.List;
 
 @Repository
 public interface QuestionDao extends JpaRepository<Questions,Integer> {
-
-
+    List<Questions> findByCategory( String category);
 }
